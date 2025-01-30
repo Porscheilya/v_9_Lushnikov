@@ -20,8 +20,6 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ScannerActivity" />
 
-        <!-- Может быть MainActivity, если это Compose-шаблон. Если не используете, можно убрать LAUNCHER -->
-        <!-- <activity android:name=".MainActivity" /> -->
     </application>
 
 </manifest>
