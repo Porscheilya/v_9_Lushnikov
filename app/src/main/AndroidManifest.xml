@@ -8,7 +8,7 @@
         android:theme="@style/Theme.Lushnikov_v_9" >
 
         <!-- Запускаем LoginActivity при старте приложения -->
-        <activity android:name=".LoginActivity"
+        <activity android:name=".LoginScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +16,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PersonalAreaActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".ScannerActivity" />
+        <activity android:name=".PersonalArea" />
+        <activity android:name=".Settings" />
+        <activity android:name=".System_Camera" />
 
-        
+
     </application>
 
 </manifest>

@@ -12,10 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 
-class PersonalAreaActivity : ComponentActivity() {
+class PersonalArea : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -27,10 +25,10 @@ class PersonalAreaActivity : ComponentActivity() {
                     userName = userName,
                     onBackClicked = { finish() },
                     onScanClicked = {
-                        startActivity(Intent(this, ScannerActivity::class.java))
+                        startActivity(Intent(this, System_Camera::class.java))
                     },
                     onSettingsClicked = {
-                        startActivity(Intent(this, SettingsActivity::class.java))
+                        startActivity(Intent(this, Settings::class.java))
                     }
                 )
             }

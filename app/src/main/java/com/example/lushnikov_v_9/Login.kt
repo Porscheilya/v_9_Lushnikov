@@ -18,7 +18,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.example.lushnikov_v_9.ui.theme.Lushnikov_v_9Theme
 
-class LoginActivity : ComponentActivity() {
+class LoginScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -26,7 +26,7 @@ class LoginActivity : ComponentActivity() {
                 // Экран логина
                 LoginScreen { userName ->
                     // Переход в личный кабинет
-                    val intent = Intent(this, PersonalAreaActivity::class.java)
+                    val intent = Intent(this, PersonalArea::class.java)
                     intent.putExtra("USER_NAME", userName)
                     startActivity(intent)
                 }

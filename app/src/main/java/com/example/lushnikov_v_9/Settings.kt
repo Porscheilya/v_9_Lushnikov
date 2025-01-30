@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.lushnikov_v_9.ui.theme.Lushnikov_v_9Theme
 
-class SettingsActivity : ComponentActivity() {
+class Settings : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
