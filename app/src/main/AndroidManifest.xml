@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lushnikov_v_9">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Lushnikov_v_9" >
+
+        <!-- Запускаем LoginActivity при старте приложения -->
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PersonalAreaActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".ScannerActivity" />
+
+        <!-- Может быть MainActivity, если это Compose-шаблон. Если не используете, можно убрать LAUNCHER -->
+        <!-- <activity android:name=".MainActivity" /> -->
+    </application>
+
+</manifest>
